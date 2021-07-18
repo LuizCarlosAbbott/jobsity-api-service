@@ -11,7 +11,7 @@ import { JwtModule } from '@nestjs/jwt';
     UsersModule,
     PassportModule,
     JwtModule.register({
-      secret: process.env.SECRET_KEY,
+      secret: 'secretKey',
       signOptions: { expiresIn: '1800s' },
     }),
   ],
